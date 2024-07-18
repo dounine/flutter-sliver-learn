@@ -192,7 +192,6 @@ class FlexibleHeaderRenderSliver extends RenderSliverSingleBoxAdapter {
 
     final paintedChildSize =
         calculatePaintOffset(constraints, from: 0.0, to: childExtent);
-    print("${constraints.overlap} ${constraints.scrollOffset} ${paintedChildSize}");
     geometry = SliverGeometry(
       scrollExtent: childExtent,
       paintOrigin: constraints.overlap,
